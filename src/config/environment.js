@@ -4,7 +4,7 @@ const config = {
   api: {
     baseURL:
       import.meta.env.VITE_API_BASE_URL ||
-      "https://your-render-api.onrender.com/api",
+      "https://terpoo-store-api.onrender.com/api", // Updated with real backend URL
     timeout: 30000, // زيادة الـ timeout إلى 30 ثانية
   },
 
