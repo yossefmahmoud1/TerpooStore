@@ -3,7 +3,7 @@ const config = {
   // API Configuration
   api: {
     baseURL:
-      import.meta.env.VITE_API_BASE_URL || "http://terpoostore.runasp.net/api", // Updated with real backend URL
+      import.meta.env.VITE_API_BASE_URL || "https://terpoostore.runasp.net/api", // Updated with real backend URL
     timeout: 30000, // زيادة الـ timeout إلى 30 ثانية
   },
 
