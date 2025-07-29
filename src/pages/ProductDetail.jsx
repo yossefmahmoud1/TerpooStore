@@ -49,13 +49,13 @@ const ProductDetail = () => {
     // تحديث عدد المشتريات
     incrementPurchaseMutation.mutate(product.id);
 
-    const phone = "01022926386";
+    const phone = "201022926386"; // رقم الموبايل بصيغة دولية بدون صفر في الأول
     const imageUrl =
       Array.isArray(product.images) && product.images.length > 0
         ? getCleanImageUrl(product.images[0])
         : "";
-    const message = `أرغب في معرفة التفاصيل عن المنتج: ${product.name}%0A${window.location.href}%0A${imageUrl}`;
-    const whatsappUrl = `https://wa.me/2${phone}?text=${encodeURIComponent(
+    const message = `أرغب في معرفة التفاصيل عن المنتج: ${product.name}\n${window.location.origin}/product/${product.id}\n${imageUrl}`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");
